@@ -1,0 +1,24 @@
+[
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 1,
+        "fields": {
+            "payment_type": "Donations to Approved Charities",
+            "description": "Donations made to approved charitable institutions",
+            "max_limit": "1000000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 2,
+        "fields": {
+            "payment_type": "Investment in Government Securities",
+            "description": "Investments made in government securities and treasury bonds",
+            "max_limit": "500000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "model": "taxmate_chatbot.taxcalendar",
+        "pk": 1,
+        "fields": {
+            "event_name": "First Quarter Payment",
+            "event_date": "2024-08-15",
+            "event_description": "First installment of quarterly tax payments due"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.taxcalendar",
+        "pk": 2,
+        "fields": {
+            "event_name": "Annual Return Filing",
+            "event_date": "2024-11-30",
+            "event_description": "Deadline for filing annual tax return for year 2023/24"
+        }
+    }
+]

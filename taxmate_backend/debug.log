@@ -1,0 +1,75 @@
+DEBUG 2025-04-30 11:36:01,726 views Request data: {'query': 'What is personal relief?'}
+INFO 2025-04-30 11:36:01,727 views Processing message: 'what is personal relief?'
+DEBUG 2025-04-30 11:36:01,727 views Querying Deduction table...
+DEBUG 2025-04-30 11:36:01,742 views SQL Queries executed:
+DEBUG 2025-04-30 11:36:01,745 views 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            : 0.000
+DEBUG 2025-04-30 11:36:01,746 views SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED: 0.000
+DEBUG 2025-04-30 11:36:01,748 views SELECT `taxmate_chatbot_deduction`.`id`, `taxmate_chatbot_deduction`.`deduction_type`, `taxmate_chatbot_deduction`.`description`, `taxmate_chatbot_deduction`.`max_allowable_amount`, `taxmate_chatbot_deduction`.`percentage`, `taxmate_chatbot_deduction`.`tax_year`, `taxmate_chatbot_deduction`.`applicable_to`, `taxmate_chatbot_deduction`.`special_conditions` FROM `taxmate_chatbot_deduction` WHERE (`taxmate_chatbot_deduction`.`deduction_type` LIKE '%what is personal relief?%' OR `taxmate_chatbot_deduction`.`description` LIKE '%what is personal relief?%') ORDER BY `taxmate_chatbot_deduction`.`id` ASC LIMIT 1: 0.016
+INFO 2025-04-30 11:36:01,748 views No direct match found - returning suggestions
+ERROR 2025-04-30 11:36:01,757 views Error processing request: (1054, "Unknown column 'question' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'question' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 78, in chat
+    UserQuery.objects.create(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'question' in 'field list'")
+[DEBUG] 2025-04-30 11:39:12,988 views Received message: ''
+[INFO] 2025-04-30 11:49:48,362 views Processing query: 

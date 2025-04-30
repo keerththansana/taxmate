@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f5f9fa 0%, #e8f8f8 100%);
+}
+
+.assistant-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Chat Interface */
+.chat-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Add padding to prevent content hiding behind input */
+    overflow: visible;
+}
+
+/* Remove existing scrollbar styles for chat-box */
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* Keep scrollbar only for body */
+body {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* Main Container */
+.assistant-container {
+    flex: 1;
+    height: calc(100vh - 100px); /* Reduced height to make space for input container */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: visible;
+}
+
+/* Welcome Container */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.assistant-welcome {
+    margin-bottom: 40px;
+}
+
+.assistant-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 24px rgba(2, 54, 54, 0.15);
+    margin-bottom: 32px;
+    transition: transform 0.3s ease;
+}
+
+.assistant-title {
+    color: #023636;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.5px;
+}
+
+.empty-state {
+    color: #485c6f;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Chat Interface */
+.chat-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Add padding to prevent content hiding behind input */
+    overflow: visible;
+}
+
+.chat-message {
+    display: flex;
+    align-items: flex-start;
+    margin: 24px 0;
+    gap: 16px;
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Message Types */
+.chat-message.user {
+    flex-direction: row-reverse;
+}
+
+.chat-message.user .chat-bubble {
+    background: #ffffff;
+    color: #023636;
+    border-radius: 16px 16px 0 16px;
+    text-align: left; /* Align text to the left */
+    margin-left: auto; /* Keep bubble aligned to the right */
+}
+
+.chat-message.assistant .chat-bubble {
+    background: #ffffff;
+    color: #2c3e50;
+    border-radius: 16px 16px 16px 0;
+    text-align: left; /* Align text to the left */
+    
+}
+
+/* Chat Bubble */
+.chat-bubble {
+    max-width: 65%;
+    padding: 16px 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left; /* Default left alignment for all bubbles */
+}
+
+/* Avatar */
+.chat-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(2, 54, 54, 0.1);
+}
+
+/* Input Container */
+.assistant-input-container {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px; /* Decreased padding */
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(2, 54, 54, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Updated Assistant Input */
+.assistant-input {
+    flex: 1;
+    padding: 4px 12px; /* Decreased padding */
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000000;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none; /* Prevent manual resizing */
+    overflow: hidden; /* Hide scrollbar inside textarea */
+    min-height: 24px; /* Decreased minimum height */
+    max-height: 200px; /* Optional: limit max height */
+}
+
+.assistant-input::placeholder {
+    color: #94a3b8;
+}
+
+.assistant-button {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #023636 0%, #034747 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.assistant-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 54, 54, 0.2);
+}
+
+.assistant-button:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "model": "taxmate_chatbot.taxslab",
+        "pk": 1,
+        "fields": {
+            "income_range_start": 0,
+            "income_range_end": 1200000,
+            "tax_rate": 0,
+            "tax_year": 2024
+        }
+    },
+    {
+        "model": "taxmate_chatbot.taxslab",
+        "pk": 2,
+        "fields": {
+            "income_range_start": 1200000,
+            "income_range_end": 1700000,
+            "tax_rate": 6,
+            "tax_year": 2024
+        }
+    },
+    {
+        "model": "taxmate_chatbot.taxslab",
+        "pk": 3,
+        "fields": {
+            "income_range_start": 1700000,
+            "income_range_end": 2200000,
+            "tax_rate": 12,
+            "tax_year": 2024
+        }
+    },
+    {
+        "model": "taxmate_chatbot.taxslab",
+        "pk": 4,
+        "fields": {
+            "income_range_start": 2200000,
+            "income_range_end": 3200000,
+            "tax_rate": 18,
+            "tax_year": 2024
+        }
+    },
+    {
+        "model": "taxmate_chatbot.taxslab",
+        "pk": 5,
+        "fields": {
+            "income_range_start": 3200000,
+            "income_range_end": null,
+            "tax_rate": 24,
+            "tax_year": 2024
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 1,
+        "fields": {
+            "question": "What is APIT?",
+            "answer": "APIT (Advance Personal Income Tax) is a system where employers deduct income tax from employees' monthly salary. This helps spread the tax liability throughout the year instead of paying a lump sum.",
+            "keywords": "apit, advance tax, monthly tax, payroll tax",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 2,
+        "fields": {
+            "question": "What is personal relief?",
+            "answer": "Personal relief is an annual tax allowance of Rs. 1,800,000 available to all resident individuals for the tax year 2024/2025.",
+            "keywords": "personal relief, tax allowance, basic allowance",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 3,
+        "fields": {
+            "question": "When is the tax filing deadline?",
+            "answer": "The deadline for filing personal income tax returns is November 30th following the end of the tax year. The tax year runs from April 1st to March 31st.",
+            "keywords": "deadline, due date, filing date, tax return",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    }
+]

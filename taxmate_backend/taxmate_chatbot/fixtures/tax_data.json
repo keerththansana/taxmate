@@ -1,0 +1,35 @@
+[
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 1,
+        "fields": {
+            "question": "What is APIT?",
+            "answer": "APIT (Advance Personal Income Tax) is the monthly tax deducted by employers from employment income. It's a pay-as-you-earn system that helps spread your tax liability throughout the year rather than paying a lump sum.",
+            "keywords": "apit,advance,personal,income,tax,monthly,employer,paye",
+            "category": "general",
+            "last_updated": "2024-04-29T12:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 2,
+        "fields": {
+            "question": "What is Personal Relief?",
+            "answer": "Personal Relief is a standard annual tax deduction of Rs. 1,200,000 available to all individual taxpayers. This amount is deducted from your total taxable income before calculating your tax liability.",
+            "keywords": "personal,relief,deduction,standard,basic,allowance",
+            "category": "deductions",
+            "last_updated": "2024-04-29T12:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 3,
+        "fields": {
+            "question": "What are the tax slabs?",
+            "answer": "The tax slabs for 2024 are:\n- First Rs. 1,200,000: 0%\n- Rs. 1,200,001 to 1,700,000: 6%\n- Rs. 1,700,001 to 2,200,000: 12%\n- Rs. 2,200,001 to 2,700,000: 18%",
+            "keywords": "tax,slabs,rates,brackets,percentage,income",
+            "category": "rates",
+            "last_updated": "2024-04-29T12:00:00Z"
+        }
+    }
+]

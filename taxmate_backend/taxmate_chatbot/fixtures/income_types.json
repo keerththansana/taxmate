@@ -1,0 +1,26 @@
+[
+    {
+        "model": "taxmate_chatbot.incometype",
+        "pk": 1,
+        "fields": {
+            "type_name": "Employment Income",
+            "description": "Income from employment including salary, wages, and other benefits"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.incometype",
+        "pk": 2,
+        "fields": {
+            "type_name": "Business Income",
+            "description": "Income from business activities"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.incometype",
+        "pk": 3,
+        "fields": {
+            "type_name": "Investment Income",
+            "description": "Income from investments including interest, dividends, and rent"
+        }
+    }
+]
