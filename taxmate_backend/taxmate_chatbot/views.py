@@ -1,39 +1,106 @@
-from django.db.models import Q # type: ignore
-from rest_framework.decorators import action # type: ignore
-from rest_framework.response import Response # type: ignore
-from rest_framework.viewsets import ViewSet # type: ignore
-from .models import Deduction, FAQStatic, UserQuery  # Add this line
+from django.db.models import Q
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework.viewsets import ViewSet
+from .models import Deduction, FAQStatic, UserQuery, TaxSlab
+from decimal import Decimal
 import logging
 import re
 
-logger = logging.getLogger('taxmate_chatbot')
+logger = logging.getLogger(__name__)
 
 class ChatbotView(ViewSet):
-    def format_deduction_response(self, deduction):
-        """Format deduction details into markdown response"""
-        response = f"# {deduction.deduction_type}\n\n"
-        response += f"## Description\n{deduction.description}\n\n"
-        
-        if deduction.max_allowable_amount:
-            response += f"## Maximum Amount\n**Rs. {deduction.max_allowable_amount:,.2f}**\n\n"
-            
-        if deduction.percentage:
-            response += f"## Percentage\n**{deduction.percentage}%**\n\n"
-            
-        response += f"## Applicable To\n**{self.get_applicable_to_text(deduction.applicable_to)}**\n\n"
-        
-        if deduction.special_conditions:
-            response += f"## Special Conditions\n{deduction.special_conditions}\n\n"
-            
-        return response
+    def get_tax_slab_info(self, income=None):
+        """Get tax slab information from database"""
+        try:
+            slabs = TaxSlab.objects.all().order_by('income_range_start')
+            if not slabs.exists():
+                return "# ⚠️ No tax slab information available"
 
-    def extract_keywords(self, text):
-        """Extract relevant keywords from query"""
-        # Remove common words and punctuation
-        text = re.sub(r'[^\w\s]', '', text.lower())
-        stop_words = {'what', 'is', 'are', 'how', 'does', 'do', 'the', 'for', 'to', 'in', 'a', 'an'}
-        keywords = [word for word in text.split() if word not in stop_words]
-        return keywords
+            response = "# 💰 Income Tax Slabs\n\n"
+            for slab in slabs:
+                end_range = slab.income_range_end or "and above"
+                response += (
+                    f"## Income Range: Rs. {slab.income_range_start:,} to "
+                    f"{end_range if isinstance(end_range, str) else f'Rs. {end_range:,}'}\n"
+                    f"- Tax Rate: **{slab.tax_rate}%**\n"
+                    f"- Tax Year: {slab.tax_year}\n\n"
+                )
+            return response
+        except Exception as e:
+            logger.error(f"Error fetching tax slabs: {str(e)}")
+            return "# ⚠️ Error fetching tax information"
+
+    def calculate_tax(self, income):
+        """Calculate tax using database tax slabs"""
+        try:
+            if not income or income <= 0:
+                return "# ⚠️ Please provide a valid income amount"
+            
+            income = Decimal(str(income))
+            tax_slabs = TaxSlab.objects.all().order_by('income_range_start')
+            total_tax = Decimal('0')
+            remaining_income = income
+            calculation = "# 🧮 Tax Calculation\n\n"
+            
+            for slab in tax_slabs:
+                if remaining_income <= 0:
+                    break
+                
+                slab_limit = slab.income_range_end or Decimal('9999999999')
+                taxable_in_slab = min(
+                    remaining_income, 
+                    slab_limit - slab.income_range_start
+                )
+                
+                if taxable_in_slab > 0:
+                    tax_in_slab = taxable_in_slab * Decimal(str(slab.tax_rate)) / Decimal('100')
+                    total_tax += tax_in_slab
+                    calculation += (
+                        f"## Slab: Rs. {slab.income_range_start:,} to "
+                        f"{slab.income_range_end or 'above'}\n"
+                        f"- Taxable Amount: Rs. {taxable_in_slab:,.2f}\n"
+                        f"- Rate: {slab.tax_rate}%\n"
+                        f"- Tax: Rs. {tax_in_slab:,.2f}\n\n"
+                    )
+                    remaining_income -= taxable_in_slab
+            
+            calculation += f"# 💵 Total Tax Payable\nRs. {total_tax:,.2f}"
+            return calculation
+
+        except Exception as e:
+            logger.error(f"Error calculating tax: {str(e)}")
+            return "# ⚠️ Error calculating tax"
+
+    def get_deduction_info(self, keywords):
+        """Fetch deduction information from database"""
+        try:
+            query = Q()
+            for keyword in keywords:
+                query |= (
+                    Q(deduction_type__icontains=keyword) |
+                    Q(description__icontains=keyword)
+                )
+            
+            deductions = Deduction.objects.filter(query)
+            if not deductions.exists():
+                return None
+
+            response = "# 💰 Tax Deductions\n\n"
+            for deduction in deductions:
+                response += (
+                    f"## {deduction.deduction_type}\n"
+                    f"{deduction.description}\n\n"
+                    f"### Details\n"
+                    f"- Maximum Amount: Rs. {deduction.max_allowable_amount:,}\n"
+                    f"- Rate: {deduction.percentage}%\n"
+                    f"- Conditions: {deduction.special_conditions}\n\n"
+                )
+            return response
+
+        except Exception as e:
+            logger.error(f"Error fetching deductions: {str(e)}")
+            return None
 
     @action(detail=False, methods=['POST'])
     def chat(self, request):
@@ -44,129 +111,77 @@ class ChatbotView(ViewSet):
             if not user_message:
                 return Response({
                     'success': True,
-                    'response': "# ❓ Please Ask a Question\nI can help you with tax-related information."
+                    'response': "# ❓ Please ask a tax-related question"
                 })
 
-            # Extract keywords from query
-            keywords = self.extract_keywords(user_message)
-            logger.info(f"Extracted keywords: {keywords}")
+            # Extract keywords
+            keywords = [word for word in user_message.split() 
+                       if word not in {'what', 'is', 'are', 'how', 'much', 'the', 'for'}]
 
-            # Define query patterns with weights
-            patterns = {
-                'personal_relief': {
-                    'keywords': ['personal', 'relief', 'allowance', 'basic'],
-                    'weight': 2,
-                    'filters': Q(deduction_type__icontains='Personal Relief')
-                },
-                'rent': {
-                    'keywords': ['rent', 'rental', 'house', 'property'],
-                    'weight': 1.5,
-                    'filters': Q(deduction_type__icontains='Rent')
-                },
-                'epf': {
-                    'keywords': ['epf', 'provident', 'fund', 'retirement'],
-                    'weight': 1.5,
-                    'filters': Q(deduction_type__icontains='EPF')
-                },
-                'charitable': {
-                    'keywords': ['charity', 'donation', 'charitable', 'donate'],
-                    'weight': 1,
-                    'filters': Q(deduction_type__icontains='Charitable')
-                }
-            }
-
-            # Score each pattern
-            pattern_scores = {}
-            for category, config in patterns.items():
-                score = sum(2 if kw in config['keywords'] else 1 
-                          for kw in keywords if any(p in kw for p in config['keywords']))
-                pattern_scores[category] = score * config['weight']
-
-            # Get best matching pattern
-            best_match = max(pattern_scores.items(), key=lambda x: x[1])
-            if best_match[1] > 0:
-                deduction = Deduction.objects.filter(
-                    patterns[best_match[0]]['filters']
-                ).first()
-                if deduction:
+            # Check for tax calculation
+            if any(word in user_message for word in ['calculate', 'compute']):
+                income_match = re.search(r'(\d[\d,]*)', user_message)
+                if income_match:
+                    income = float(income_match.group(1).replace(',', ''))
                     return Response({
                         'success': True,
-                        'response': self.format_deduction_response(deduction)
+                        'response': self.calculate_tax(income)
                     })
 
-            # Try FAQ matching with keyword relevance
-            matching_faqs = FAQStatic.objects.filter(
-                Q(keywords__icontains=user_message) |
-                Q(question__icontains=user_message)
-            )
-            
-            if matching_faqs.exists():
-                best_faq = max(matching_faqs, 
-                    key=lambda faq: sum(kw in faq.keywords.lower() for kw in keywords))
+            # Check for tax slabs
+            if any(term in user_message for term in ['slab', 'rate', 'percentage']):
                 return Response({
                     'success': True,
-                    'response': f"# ❓ {best_faq.question}\n\n{best_faq.answer}"
+                    'response': self.get_tax_slab_info()
                 })
 
-            # Store query for training
+            # Check for deductions
+            deduction_info = self.get_deduction_info(keywords)
+            if deduction_info:
+                return Response({
+                    'success': True,
+                    'response': deduction_info
+                })
+
+            # Try FAQ matching
+            faq = FAQStatic.objects.filter(
+                Q(keywords__icontains=' '.join(keywords)) |
+                Q(question__icontains=' '.join(keywords))
+            ).first()
+
+            if faq:
+                return Response({
+                    'success': True,
+                    'response': f"# ❓ {faq.question}\n\n{faq.answer}"
+                })
+
+            # Store unmatched query
             UserQuery.objects.create(
                 question=user_message,
                 matched_response="No match found",
                 conversation_id=request.session.session_key or 'default'
             )
 
-            # Return contextual suggestions
+            # Get available topics from database
+            deduction_types = Deduction.objects.values_list('deduction_type', flat=True)
+            
             return Response({
                 'success': True,
-                'response': self.get_contextual_suggestions(keywords)
+                'response': (
+                    "# 🤔 Available Tax Topics\n\n"
+                    "## Deduction Types\n" +
+                    "\n".join([f"- {dtype}" for dtype in deduction_types]) +
+                    "\n\n## Example Queries\n"
+                    "- Calculate tax for Rs. 2,500,000\n"
+                    "- What are the current tax rates?\n"
+                    "- Tell me about personal relief\n"
+                    "- How does EPF deduction work?"
+                )
             })
 
         except Exception as e:
             logger.error(f"Error in chat: {str(e)}", exc_info=True)
             return Response({
                 'success': False,
-                'response': "# ⚠️ Error\nSorry, I encountered an error. Please try again."
+                'response': "# ⚠️ Error\nSorry, something went wrong. Please try again."
             }, status=500)
-
-    def get_contextual_suggestions(self, keywords):
-        """Generate contextual suggestions based on keywords"""
-        tax_terms = {'tax', 'income', 'payment'}
-        relief_terms = {'relief', 'deduction', 'allowance'}
-        
-        if any(term in keywords for term in tax_terms):
-            return (
-                "# 📊 Tax Topics\n\n"
-                "## Available Information\n"
-                "- Income tax rates and slabs\n"
-                "- Tax calculation methods\n"
-                "- Tax payment calendar\n\n"
-                "## Try Asking\n"
-                "- 'What are the current tax rates?'\n"
-                "- 'How is income tax calculated?'\n"
-                "- 'When are tax payments due?'"
-            )
-        elif any(term in keywords for term in relief_terms):
-            return (
-                "# 💰 Tax Relief\n\n"
-                "## Available Types\n"
-                "- Personal Relief (Rs. 1,800,000)\n"
-                "- Rent Relief\n"
-                "- EPF Contributions\n"
-                "- Charitable Donations\n\n"
-                "## Try Asking\n"
-                "- 'What is personal relief?'\n"
-                "- 'How does rent relief work?'\n"
-                "- 'Tell me about EPF deductions'"
-            )
-        else:
-            return (
-                "# 🤔 Need Help?\n\n"
-                "## Popular Topics\n"
-                "- Tax Calculations\n"
-                "- Available Deductions\n"
-                "- Payment Deadlines\n\n"
-                "## Example Questions\n"
-                "- 'What tax reliefs are available?'\n"
-                "- 'How much is personal relief?'\n"
-                "- 'When do I need to pay taxes?'"
-            )
