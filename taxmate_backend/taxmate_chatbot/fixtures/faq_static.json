@@ -28,5 +28,75 @@
             "keywords": "deadline, due date, filing date, tax return",
             "last_updated": "2024-04-30T00:00:00Z"
         }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 4,
+        "fields": {
+            "question": "What is the tax-free threshold for personal income tax?",
+            "answer": "For the tax year 2024/2025, the tax-free threshold for personal income tax is Rs. 1,800,000 per annum.",
+            "keywords": "tax-free threshold, personal income tax, exemption limit",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 5,
+        "fields": {
+            "question": "How are rental incomes taxed?",
+            "answer": "Rental income is subject to income tax after a standard deduction of 25% to account for expenses.",
+            "keywords": "rental income, rent tax, property income",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 6,
+        "fields": {
+            "question": "Are EPF and ETF contributions tax-deductible?",
+            "answer": "Employee contributions to EPF (8%) are tax-deductible. Employer contributions to ETF (3%) are not deductible by the employee.",
+            "keywords": "EPF, ETF, retirement fund, tax deduction",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 7,
+        "fields": {
+            "question": "What deductions are available for charitable donations?",
+            "answer": "Donations made in money to approved charitable institutions are deductible up to Rs. 75,000 or 1/3 of taxable income, whichever is lower.",
+            "keywords": "charitable donations, tax deduction, approved charities",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 8,
+        "fields": {
+            "question": "Can I claim deductions for solar panel installations?",
+            "answer": "Yes, individuals can claim a deduction up to Rs. 600,000 for installing solar panels connected to the national grid.",
+            "keywords": "solar panels, renewable energy, tax deduction",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 9,
+        "fields": {
+            "question": "Are life and medical insurance premiums tax-deductible?",
+            "answer": "Premiums paid for life and medical insurance policies are tax-deductible up to specified limits.",
+            "keywords": "insurance premiums, life insurance, medical insurance, tax deduction",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.faqstatic",
+        "pk": 10,
+        "fields": {
+            "question": "How can senior citizens benefit from tax exemptions?",
+            "answer": "Senior citizens with total income not exceeding Rs. 1.8 million are exempt from interest income withholding tax.",
+            "keywords": "senior citizens, tax exemption, interest income",
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
     }
 ]

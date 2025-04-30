@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "payment_type": "Donations to Approved Charities",
-            "description": "Donations made to approved charitable institutions",
+            "description": "Monetary donations made to charitable institutions approved by the IRD.",
             "max_limit": "1000000.00",
             "tax_year": 2024,
             "last_updated": "2024-04-30T00:00:00Z"
@@ -15,8 +15,52 @@
         "pk": 2,
         "fields": {
             "payment_type": "Investment in Government Securities",
-            "description": "Investments made in government securities and treasury bonds",
+            "description": "Investments made in government securities and treasury bonds.",
             "max_limit": "500000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 3,
+        "fields": {
+            "payment_type": "Expenditure on Solar Panel Installation",
+            "description": "Expenses incurred by a resident individual for installing solar panels connected to the national grid.",
+            "max_limit": "600000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 4,
+        "fields": {
+            "payment_type": "Expenditure on Film Production",
+            "description": "Costs incurred in producing a film with a minimum expenditure of LKR 5 million.",
+            "max_limit": "5000000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 5,
+        "fields": {
+            "payment_type": "Expenditure on New Cinema Construction",
+            "description": "Costs incurred in constructing and equipping a new cinema, up to LKR 25 million.",
+            "max_limit": "25000000.00",
+            "tax_year": 2024,
+            "last_updated": "2024-04-30T00:00:00Z"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.qualifyingpayment",
+        "pk": 6,
+        "fields": {
+            "payment_type": "Expenditure on Cinema Upgrading",
+            "description": "Costs incurred in upgrading an existing cinema, up to LKR 10 million.",
+            "max_limit": "10000000.00",
             "tax_year": 2024,
             "last_updated": "2024-04-30T00:00:00Z"
         }

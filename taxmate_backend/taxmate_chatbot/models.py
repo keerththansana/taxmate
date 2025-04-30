@@ -83,6 +83,27 @@ class Deduction(models.Model):
     def __str__(self):
         return self.deduction_type
 
+    def get_formatted_details(self):
+        """Get formatted details for chatbot response"""
+        details = {
+            'type': self.deduction_type,
+            'description': self.description,
+            'amount': self.max_allowable_amount,
+            'percentage': self.percentage,
+            'applicable_to': self.get_applicable_to_display(),
+            'conditions': self.special_conditions
+        }
+        return details
+
+    def matches_query(self, query):
+        """Check if deduction matches search query"""
+        query = query.lower()
+        return (
+            query in self.deduction_type.lower() or
+            query in self.description.lower() or
+            (self.special_conditions and query in self.special_conditions.lower())
+        )
+
 # 6. Tax Rates by Income Subtype
 class TaxRateByType(models.Model):
     income_subtype = models.ForeignKey(IncomeSubtype, on_delete=models.CASCADE)
@@ -139,16 +160,12 @@ class TaxCalendar(models.Model):
 class UserQuery(models.Model):
     question = models.TextField()
     matched_response = models.TextField()
-    user_feedback = models.BooleanField(null=True, default=None)
-    created_at = models.DateTimeField(auto_now_add=True)
-    conversation_id = models.CharField(max_length=100, default='default')
+    conversation_id = models.CharField(max_length=100, db_index=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    user_feedback = models.BooleanField(default=False)
 
     class Meta:
-        db_table = 'taxmate_chatbot_userquery'
-        indexes = [
-            models.Index(fields=['user_feedback'], name='feedback_idx'),
-            models.Index(fields=['conversation_id'], name='conv_id_idx')
-        ]
+        db_table = 'user_queries'
 
     def __str__(self):
         return f"{self.question[:50]}..."

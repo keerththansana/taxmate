@@ -3,22 +3,33 @@
         "model": "taxmate_chatbot.userquery",
         "pk": 1,
         "fields": {
-            "question": "how to calculate tax?",
-            "matched_response": "To calculate tax, please provide your annual income. For example: 'Calculate tax for 2,000,000'",
-            "user_feedback": true,
-            "created_at": "2024-04-30T00:00:00Z",
-            "conversation_id": "default"
+            "question": "What is EPF contribution?",
+            "matched_response": "Employee EPF contributions (8%) are deductible. Employer contributions (12%) are not taxable. Withdrawals are generally tax-exempt upon retirement.",
+            "conversation_id": "default",
+            "timestamp": "2024-04-30T00:00:00Z",
+            "user_feedback": true
         }
     },
     {
         "model": "taxmate_chatbot.userquery",
         "pk": 2,
         "fields": {
-            "question": "what are the deductions available?",
-            "matched_response": "Tax deductions include personal relief, employment income relief, and qualifying payments such as charitable donations.",
-            "user_feedback": true,
-            "created_at": "2024-04-30T00:00:00Z",
-            "conversation_id": "default"
+            "question": "How is rental income taxed?",
+            "matched_response": "Rental income is taxed under investment income. A 25% standard deduction is allowed for maintenance before tax is applied on the net income.",
+            "conversation_id": "default",
+            "timestamp": "2024-04-30T00:00:00Z",
+            "user_feedback": true
+        }
+    },
+    {
+        "model": "taxmate_chatbot.userquery",
+        "pk": 3,
+        "fields": {
+            "question": "What is personal relief?",
+            "matched_response": "Personal relief is an annual allowance of Rs. 1,800,000 that reduces your taxable income. It applies to all resident individuals.",
+            "conversation_id": "default",
+            "timestamp": "2024-04-30T00:00:00Z",
+            "user_feedback": true
         }
     }
 ]

@@ -55,5 +55,95 @@
             "tax_year": 2024,
             "applicable_to": "2"
         }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 6,
+        "fields": {
+            "deduction_type": "ETF Contributions",
+            "description": "Employer contributions to ETF are tax-exempt and part of employment benefits.",
+            "percentage": "3.00",
+            "tax_year": 2024,
+            "applicable_to": "2"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 7,
+        "fields": {
+            "deduction_type": "Advance Personal Income Tax (APIT)",
+            "description": "Mandatory tax deducted from employment income as an advance payment.",
+            "max_allowable_amount": null,
+            "tax_year": 2024,
+            "applicable_to": "2"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 8,
+        "fields": {
+            "deduction_type": "Withholding Tax (WHT) on Interest",
+            "description": "Tax withheld at source on interest income. Exempt for those earning below Rs. 150,000 monthly.",
+            "max_allowable_amount": null,
+            "tax_year": 2024,
+            "applicable_to": "3",
+            "special_conditions": "Exemption if total monthly income is less than Rs. 150,000"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 9,
+        "fields": {
+            "deduction_type": "Senior Citizen Interest Exemption",
+            "description": "Interest income of senior citizens is tax-exempt if assessable income is below Rs. 1.8 million.",
+            "max_allowable_amount": null,
+            "tax_year": 2024,
+            "applicable_to": "3",
+            "special_conditions": "Applicable only if annual assessable income < Rs. 1.8 million"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 10,
+        "fields": {
+            "deduction_type": "Pension Fund Contributions",
+            "description": "Voluntary contributions to approved pension funds.",
+            "max_allowable_amount": "500000.00",
+            "tax_year": 2024,
+            "applicable_to": "1"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 11,
+        "fields": {
+            "deduction_type": "Life Insurance Premiums",
+            "description": "Premiums paid for life insurance policies are deductible.",
+            "max_allowable_amount": "100000.00",
+            "tax_year": 2024,
+            "applicable_to": "1"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 12,
+        "fields": {
+            "deduction_type": "Medical Insurance Premiums",
+            "description": "Premiums paid for approved medical insurance policies are deductible.",
+            "max_allowable_amount": "100000.00",
+            "tax_year": 2024,
+            "applicable_to": "1"
+        }
+    },
+    {
+        "model": "taxmate_chatbot.deduction",
+        "pk": 13,
+        "fields": {
+            "deduction_type": "Educational Expenses for Children",
+            "description": "Expenses for children's education up to the allowable limit.",
+            "max_allowable_amount": "200000.00",
+            "tax_year": 2024,
+            "applicable_to": "1"
+        }
     }
 ]

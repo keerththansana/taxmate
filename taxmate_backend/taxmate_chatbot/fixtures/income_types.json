@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "type_name": "Employment Income",
-            "description": "Income from employment including salary, wages, and other benefits"
+            "description": "Income from employment including salary, wages, bonuses, and other employment-related earnings."
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields": {
             "type_name": "Business Income",
-            "description": "Income from business activities"
+            "description": "Profits from business activities, including sole proprietorships and partnerships."
         }
     },
     {
@@ -20,7 +20,15 @@
         "pk": 3,
         "fields": {
             "type_name": "Investment Income",
-            "description": "Income from investments including interest, dividends, and rent"
+            "description": "Earnings from dividends, interest, rents, royalties, and annuities."
+        }
+    },
+    {
+        "model": "taxmate_chatbot.incometype",
+        "pk": 4,
+        "fields": {
+            "type_name": "Other Income",
+            "description": "Income not classified under the above categories, such as winnings from lotteries or awards."
         }
     }
 ]
