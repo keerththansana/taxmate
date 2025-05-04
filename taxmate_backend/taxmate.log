@@ -1,0 +1,658 @@
+INFO 2025-05-04 15:22:22,578 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:22:25,520 apps NLP components initialized successfully
+INFO 2025-05-04 15:22:25,533 apps NLP model verification successful
+INFO 2025-05-04 15:22:28,935 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:22:32,338 apps NLP components initialized successfully
+INFO 2025-05-04 15:22:32,348 apps NLP model verification successful
+INFO 2025-05-04 15:22:32,986 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:22:40,710 apps NLP components initialized successfully
+INFO 2025-05-04 15:22:40,813 apps NLP model verification successful
+INFO 2025-05-04 15:22:45,331 views Processing query: hi
+INFO 2025-05-04 15:22:52,422 views Processing query: personal relief
+INFO 2025-05-04 15:23:01,654 views Processing query: apit
+INFO 2025-05-04 15:25:37,402 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:25:43,050 apps NLP components initialized successfully
+INFO 2025-05-04 15:25:43,082 apps NLP model verification successful
+INFO 2025-05-04 15:26:41,380 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:26:48,002 apps NLP components initialized successfully
+INFO 2025-05-04 15:26:48,002 apps NLP model verification successful
+INFO 2025-05-04 15:27:01,388 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:27:03,932 apps NLP components initialized successfully
+INFO 2025-05-04 15:27:03,938 apps NLP model verification successful
+INFO 2025-05-04 15:27:05,093 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:27:07,899 apps NLP components initialized successfully
+INFO 2025-05-04 15:27:07,902 apps NLP model verification successful
+INFO 2025-05-04 15:27:11,503 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:27:13,958 apps NLP components initialized successfully
+INFO 2025-05-04 15:27:13,970 apps NLP model verification successful
+INFO 2025-05-04 15:27:20,388 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:27:23,168 apps NLP components initialized successfully
+INFO 2025-05-04 15:27:23,178 apps NLP model verification successful
+INFO 2025-05-04 15:27:23,633 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:27:26,060 apps NLP components initialized successfully
+INFO 2025-05-04 15:27:26,068 apps NLP model verification successful
+INFO 2025-05-04 15:27:31,489 views Processing query: hi
+INFO 2025-05-04 15:27:42,936 views Processing query: good morning
+INFO 2025-05-04 15:27:53,647 views Processing query: can you tell mw about tax
+INFO 2025-05-04 15:28:03,682 views Processing query: what is tax
+INFO 2025-05-04 15:28:21,333 views Processing query: thank you
+INFO 2025-05-04 15:28:38,629 views Processing query: no no you are very wrong
+INFO 2025-05-04 15:33:05,172 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:33:10,427 apps NLP components initialized successfully
+INFO 2025-05-04 15:33:10,458 apps NLP model verification successful
+INFO 2025-05-04 15:33:18,503 views Processing query: hi
+INFO 2025-05-04 15:33:27,757 views Processing query: what is taxrate
+INFO 2025-05-04 15:34:07,332 views Processing query: what apit
+INFO 2025-05-04 15:34:21,422 views Processing query: what personalrelief
+INFO 2025-05-04 15:34:37,229 views Processing query: available deductions and reliefs
+INFO 2025-05-04 15:34:50,225 views Processing query: etf contributions
+INFO 2025-05-04 15:35:00,247 views Processing query: apit and wht
+INFO 2025-05-04 15:37:40,189 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:37:43,646 apps NLP components initialized successfully
+INFO 2025-05-04 15:37:43,669 apps NLP model verification successful
+INFO 2025-05-04 15:38:12,073 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:38:14,309 apps NLP components initialized successfully
+INFO 2025-05-04 15:38:14,319 apps NLP model verification successful
+INFO 2025-05-04 15:38:14,729 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:38:17,027 apps NLP components initialized successfully
+INFO 2025-05-04 15:38:17,035 apps NLP model verification successful
+INFO 2025-05-04 15:38:46,597 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:38:49,561 apps NLP components initialized successfully
+INFO 2025-05-04 15:38:49,569 apps NLP model verification successful
+INFO 2025-05-04 15:38:53,735 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:38:56,729 apps NLP components initialized successfully
+INFO 2025-05-04 15:38:56,741 apps NLP model verification successful
+ERROR 2025-05-04 15:38:57,659 views Error in chat: 'ChatbotView' object has no attribute 'handle_greeting'
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 225, in chat
+    return self.handle_greeting(user_message)
+AttributeError: 'ChatbotView' object has no attribute 'handle_greeting'
+ERROR 2025-05-04 15:39:07,227 views Error in chat: Pipeline is not fitted yet.
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\pipeline.py", line 54, in _raise_or_warn_if_not_fitted
+    yield
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\pipeline.py", line 787, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 2126, in transform
+    check_is_fitted(self, msg="The TF-IDF vectorizer is not fitted")
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: The TF-IDF vectorizer is not fitted
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 232, in chat
+    response_type = self.response_predictor.predict(processed_text)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\ml_model.py", line 25, in predict
+    return self.model.predict([query])[0]
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\pipeline.py", line 794, in predict
+    return self.steps[-1][1].predict(
+  File "C:\Users\Keerththansana\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\sklearn\pipeline.py", line 56, in _raise_or_warn_if_not_fitted
+    raise NotFittedError("Pipeline is not fitted yet.") from exc
+sklearn.exceptions.NotFittedError: Pipeline is not fitted yet.
+INFO 2025-05-04 15:40:37,618 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:40:40,789 apps NLP components initialized successfully
+INFO 2025-05-04 15:40:40,796 apps NLP model verification successful
+INFO 2025-05-04 15:40:45,387 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:40:47,717 apps NLP components initialized successfully
+INFO 2025-05-04 15:40:47,725 apps NLP model verification successful
+INFO 2025-05-04 15:41:21,547 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:41:23,914 apps NLP components initialized successfully
+INFO 2025-05-04 15:41:23,921 apps NLP model verification successful
+INFO 2025-05-04 15:41:24,314 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:41:26,486 apps NLP components initialized successfully
+INFO 2025-05-04 15:41:26,492 apps NLP model verification successful
+INFO 2025-05-04 15:42:33,013 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:42:35,512 apps NLP components initialized successfully
+INFO 2025-05-04 15:42:35,519 apps NLP model verification successful
+INFO 2025-05-04 15:45:49,395 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:45:53,317 apps NLP components initialized successfully
+INFO 2025-05-04 15:45:53,349 apps NLP model verification successful
+INFO 2025-05-04 15:45:53,831 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:45:57,574 apps NLP components initialized successfully
+INFO 2025-05-04 15:45:57,583 apps NLP model verification successful
+ERROR 2025-05-04 15:46:00,704 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:46:01,426 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:46:03,030 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:46:23,129 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:46:25,313 apps NLP components initialized successfully
+INFO 2025-05-04 15:46:25,319 apps NLP model verification successful
+INFO 2025-05-04 15:46:25,760 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:46:27,969 apps NLP components initialized successfully
+INFO 2025-05-04 15:46:27,974 apps NLP model verification successful
+INFO 2025-05-04 15:49:20,684 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:49:25,284 apps NLP components initialized successfully
+INFO 2025-05-04 15:49:25,297 apps NLP model verification successful
+INFO 2025-05-04 15:50:20,905 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:50:23,812 apps NLP components initialized successfully
+INFO 2025-05-04 15:50:23,819 apps NLP model verification successful
+INFO 2025-05-04 15:50:33,167 views Received message: What is tax?
+INFO 2025-05-04 15:50:33,179 views Intent: calculation, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:50:33,183 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:50:33,184 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:50:33,599 views Received message: Tell me about tax rates
+INFO 2025-05-04 15:50:33,614 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:50:33,614 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:50:34,030 views Received message: What deductions are available?
+INFO 2025-05-04 15:50:34,048 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['deduction']}
+INFO 2025-05-04 15:50:34,513 views Received message: Calculate tax for Rs. 2,500,000
+INFO 2025-05-04 15:50:34,532 views Intent: calculation, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:50:34,533 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:50:34,535 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:50:42,009 views Received message: hi
+INFO 2025-05-04 15:50:42,010 views Intent: greeting, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+INFO 2025-05-04 15:50:47,375 views Received message: what is APIT
+INFO 2025-05-04 15:50:47,398 views Intent: calculation, Entities: {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}
+ERROR 2025-05-04 15:50:47,400 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:50:58,462 views Received message: what tax rate
+INFO 2025-05-04 15:50:58,494 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:50:58,497 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:51:07,388 views Received message: what personal relief
+INFO 2025-05-04 15:51:07,420 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['relief', 'personal relief']}
+INFO 2025-05-04 15:51:14,178 views Received message: what is APIT
+INFO 2025-05-04 15:51:14,200 views Intent: calculation, Entities: {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}
+ERROR 2025-05-04 15:51:14,209 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:54:47,210 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:54:50,699 apps NLP components initialized successfully
+INFO 2025-05-04 15:54:50,705 apps NLP model verification successful
+INFO 2025-05-04 15:54:56,330 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:54:58,503 apps NLP components initialized successfully
+INFO 2025-05-04 15:54:58,513 apps NLP model verification successful
+INFO 2025-05-04 15:54:58,933 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:55:01,300 apps NLP components initialized successfully
+INFO 2025-05-04 15:55:01,300 apps NLP model verification successful
+INFO 2025-05-04 15:56:45,451 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 15:56:49,698 apps NLP components initialized successfully
+INFO 2025-05-04 15:56:49,707 apps NLP model verification successful
+INFO 2025-05-04 15:56:54,908 views Received message: hi
+INFO 2025-05-04 15:56:54,923 views Intent: greeting, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+INFO 2025-05-04 15:56:59,728 views Received message: good morning
+INFO 2025-05-04 15:56:59,754 views Intent: greeting, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+INFO 2025-05-04 15:57:24,088 views Received message: want to know about srilankan individual tax. can you help me
+INFO 2025-05-04 15:57:24,122 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:57:24,124 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:57:24,126 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:57:42,106 views Received message: what APIT
+INFO 2025-05-04 15:57:42,137 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}
+INFO 2025-05-04 15:58:00,173 views Received message: Tax rates and slabs
+INFO 2025-05-04 15:58:00,197 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:58:00,199 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:58:09,925 views Received message: Personal income tax computation
+INFO 2025-05-04 15:58:09,946 views Intent: tax_info, Entities: {'amount': [], 'date': [], 'tax_type': ['income tax'], 'deduction_type': []}
+ERROR 2025-05-04 15:58:09,949 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:58:09,952 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 15:58:25,711 views Received message: Charitable donations
+INFO 2025-05-04 15:58:25,730 views Intent: general_query, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['donation']}
+INFO 2025-05-04 15:58:36,603 views Received message: What is my tax for Rs. 2,500,000 income?'
+INFO 2025-05-04 15:58:36,644 views Intent: calculation, Entities: {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}
+ERROR 2025-05-04 15:58:36,647 views Error fetching FAQ: name 'fuzz' is not defined
+ERROR 2025-05-04 15:58:36,648 views Error fetching FAQ: name 'fuzz' is not defined
+INFO 2025-05-04 16:00:35,480 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 16:00:40,413 apps NLP components initialized successfully
+INFO 2025-05-04 16:00:40,420 apps NLP model verification successful
+INFO 2025-05-04 16:00:41,214 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 16:00:44,955 apps NLP components initialized successfully
+INFO 2025-05-04 16:00:44,964 apps NLP model verification successful
+INFO 2025-05-04 16:00:54,110 views Received message: what is APIT
+INFO 2025-05-04 16:01:05,692 views Received message: tax
+INFO 2025-05-04 16:01:13,335 views Received message: what is tax filling
+INFO 2025-05-04 16:01:35,400 views Received message: what is personal relief
+INFO 2025-05-04 16:01:57,920 views Received message: personal relief maximum amount
+INFO 2025-05-04 20:12:43,515 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:13:08,528 apps NLP components initialized successfully
+INFO 2025-05-04 20:13:08,575 apps NLP model verification successful
+INFO 2025-05-04 20:13:09,725 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:13:14,113 apps NLP components initialized successfully
+INFO 2025-05-04 20:13:14,124 apps NLP model verification successful
+INFO 2025-05-04 20:49:13,935 views Received message: hi
+INFO 2025-05-04 20:49:46,984 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:49:51,322 apps NLP components initialized successfully
+INFO 2025-05-04 20:49:51,330 apps NLP model verification successful
+INFO 2025-05-04 20:50:10,818 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:50:14,358 apps NLP components initialized successfully
+INFO 2025-05-04 20:50:14,358 apps NLP model verification successful
+INFO 2025-05-04 20:51:32,067 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:51:35,346 apps NLP components initialized successfully
+INFO 2025-05-04 20:51:35,351 apps NLP model verification successful
+INFO 2025-05-04 20:51:35,954 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:51:39,036 apps NLP components initialized successfully
+INFO 2025-05-04 20:51:39,050 apps NLP model verification successful
+INFO 2025-05-04 20:52:25,162 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:52:28,705 apps NLP components initialized successfully
+INFO 2025-05-04 20:52:28,713 apps NLP model verification successful
+INFO 2025-05-04 20:52:29,223 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:52:32,316 apps NLP components initialized successfully
+INFO 2025-05-04 20:52:32,332 apps NLP model verification successful
+INFO 2025-05-04 20:52:34,077 nlp_processor NLP processor initialized successfully
+ERROR 2025-05-04 20:52:34,077 views Error in chat: 'TaxNLPProcessor' object has no attribute 'intent_patterns'
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 281, in chat
+    context = self.nlp_processor.extract_conversation_context(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\nlp_processor.py", line 78, in extract_conversation_context
+    'intent': self.extract_intent(text),
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\nlp_processor.py", line 122, in extract_intent
+    for intent, patterns in self.intent_patterns.items():
+AttributeError: 'TaxNLPProcessor' object has no attribute 'intent_patterns'
+INFO 2025-05-04 20:53:51,659 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:53:56,640 apps NLP components initialized successfully
+INFO 2025-05-04 20:53:56,652 apps NLP model verification successful
+INFO 2025-05-04 20:54:04,304 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:54:06,960 apps NLP components initialized successfully
+INFO 2025-05-04 20:54:06,971 apps NLP model verification successful
+INFO 2025-05-04 20:54:13,705 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:54:13,722 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': None}
+INFO 2025-05-04 20:54:20,645 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:54:20,698 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': None}
+INFO 2025-05-04 20:54:34,348 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:54:34,397 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': None}
+INFO 2025-05-04 20:54:44,650 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:54:44,683 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'general', 'previous_context': None}
+ERROR 2025-05-04 20:54:44,683 views Error in chat: 'ChatbotView' object has no attribute 'handle_tax_query'
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 304, in chat
+    return self.handle_tax_query(user_message, context)
+AttributeError: 'ChatbotView' object has no attribute 'handle_tax_query'
+INFO 2025-05-04 20:56:46,663 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:56:50,457 apps NLP components initialized successfully
+INFO 2025-05-04 20:56:50,473 apps NLP model verification successful
+INFO 2025-05-04 20:58:16,171 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 20:58:19,865 apps NLP components initialized successfully
+INFO 2025-05-04 20:58:19,884 apps NLP model verification successful
+INFO 2025-05-04 20:58:23,855 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:23,880 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 20:58:24,328 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:24,339 views Context: {'intent': 'tax_info', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['deduction']}, 'is_question': False, 'conversation_type': 'general', 'previous_context': {}}
+INFO 2025-05-04 20:58:24,790 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:24,822 views Context: {'intent': 'help', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['income tax'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 20:58:25,316 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:25,327 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 20:58:36,646 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:36,646 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 20:58:46,647 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 20:58:46,683 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:01:49,575 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:01:56,692 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:01:59,716 apps NLP components initialized successfully
+INFO 2025-05-04 21:01:59,724 apps NLP model verification successful
+INFO 2025-05-04 21:02:00,246 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:02:03,901 apps NLP components initialized successfully
+INFO 2025-05-04 21:02:03,908 apps NLP model verification successful
+INFO 2025-05-04 21:02:11,035 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:02:11,059 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 21:02:19,028 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:02:19,075 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:02:36,617 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:02:36,649 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'positive', 'confidence': 0.4767}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['relief', 'personal relief']}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:05:14,306 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:05:19,351 apps NLP components initialized successfully
+INFO 2025-05-04 21:05:19,394 apps NLP model verification successful
+INFO 2025-05-04 21:05:25,843 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:05:25,870 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 21:05:31,256 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:05:31,302 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'general', 'previous_context': {}}
+INFO 2025-05-04 21:05:37,214 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:05:37,249 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'positive', 'confidence': 0.4404}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 21:07:26,536 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:07:26,584 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:19:15,124 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:19:20,322 apps NLP components initialized successfully
+INFO 2025-05-04 21:19:20,387 apps NLP model verification successful
+INFO 2025-05-04 21:19:20,832 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:19:23,388 apps NLP components initialized successfully
+INFO 2025-05-04 21:19:23,400 apps NLP model verification successful
+INFO 2025-05-04 21:20:19,093 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:20:19,108 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:20:19,548 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:20:19,548 views Context: {'intent': 'deduction', 'sentiment': {'sentiment': 'positive', 'confidence': 0.4767}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': ['relief', 'personal relief']}, 'is_question': False, 'conversation_type': 'general', 'previous_context': {}}
+INFO 2025-05-04 21:20:21,149 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:20:21,175 views Context: {'intent': 'deadline', 'sentiment': {'sentiment': 'negative', 'confidence': 0.1027}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:20:21,591 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:20:21,611 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:20:22,042 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:20:22,063 views Context: {'intent': 'deduction', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:23:07,870 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:23:12,176 apps NLP components initialized successfully
+INFO 2025-05-04 21:23:12,193 apps NLP model verification successful
+INFO 2025-05-04 21:23:12,930 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:23:16,180 apps NLP components initialized successfully
+INFO 2025-05-04 21:23:16,187 apps NLP model verification successful
+INFO 2025-05-04 21:23:24,465 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:23:24,512 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 21:24:16,157 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:24:16,204 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:27:10,441 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:27:13,804 apps NLP components initialized successfully
+INFO 2025-05-04 21:27:13,811 apps NLP model verification successful
+INFO 2025-05-04 21:27:17,219 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:27:20,129 apps NLP components initialized successfully
+INFO 2025-05-04 21:27:20,137 apps NLP model verification successful
+INFO 2025-05-04 21:27:21,683 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:27:21,702 views Context: {'intent': 'general_query', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': [], 'deduction_type': []}, 'is_question': False, 'conversation_type': 'greeting', 'previous_context': {}}
+INFO 2025-05-04 21:27:32,669 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:27:32,701 views Context: {'intent': 'calculation', 'sentiment': {'sentiment': 'neutral', 'confidence': 0.0}, 'entities': {'amount': [], 'date': [], 'tax_type': ['apit'], 'deduction_type': []}, 'is_question': True, 'conversation_type': 'confusion', 'previous_context': {}}
+INFO 2025-05-04 21:30:26,009 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:30:30,201 apps NLP components initialized successfully
+INFO 2025-05-04 21:30:30,222 apps NLP model verification successful
+INFO 2025-05-04 21:31:44,759 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:31:48,469 apps NLP components initialized successfully
+INFO 2025-05-04 21:31:48,533 apps NLP model verification successful
+INFO 2025-05-04 21:32:19,164 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:32:21,595 apps NLP components initialized successfully
+INFO 2025-05-04 21:32:21,609 apps NLP model verification successful
+INFO 2025-05-04 21:32:52,000 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:32:55,086 apps NLP components initialized successfully
+INFO 2025-05-04 21:32:55,105 apps NLP model verification successful
+INFO 2025-05-04 21:32:59,783 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:32:59,785 views Received message: hi
+INFO 2025-05-04 21:33:08,736 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:33:08,741 views Received message: what is APIT
+INFO 2025-05-04 21:34:20,972 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:34:20,972 views Received message: what is personal relief
+INFO 2025-05-04 21:35:51,880 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:35:51,882 views Received message: what is tax for taxable amount for 5000000
+INFO 2025-05-04 21:36:11,578 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:36:11,578 views Received message: when i need to filling the tax
+INFO 2025-05-04 21:36:28,451 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:36:28,451 views Received message: calculate tax for 700000
+INFO 2025-05-04 21:36:49,691 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:36:49,691 views Received message: what are the income types
+INFO 2025-05-04 21:36:58,716 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:36:58,716 views Received message: Available deductions
+INFO 2025-05-04 21:37:24,759 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:37:24,759 views Received message: what is AIT
+INFO 2025-05-04 21:37:52,145 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:37:55,813 apps NLP components initialized successfully
+INFO 2025-05-04 21:37:55,813 apps NLP model verification successful
+INFO 2025-05-04 21:40:17,431 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:40:21,614 apps NLP components initialized successfully
+INFO 2025-05-04 21:40:21,636 apps NLP model verification successful
+INFO 2025-05-04 21:40:25,150 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:40:28,593 apps NLP components initialized successfully
+INFO 2025-05-04 21:40:28,601 apps NLP model verification successful
+INFO 2025-05-04 21:40:29,556 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:40:29,556 views Received message: hi
+INFO 2025-05-04 21:40:37,806 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:40:37,806 views Received message: good evening
+INFO 2025-05-04 21:40:46,015 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:40:46,017 views Received message: what is tax means
+ERROR 2025-05-04 21:40:46,035 views Error in chat: Cannot resolve keyword 'is_active' into field. Choices are: id, income_range_end, income_range_start, period, tax_rate, tax_year
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 305, in chat
+    slabs = TaxSlab.objects.filter(is_active=True).order_by('income_range_start')
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: id, income_range_end, income_range_start, period, tax_rate, tax_year
+INFO 2025-05-04 21:40:54,518 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:40:54,518 views Received message: what is APIT
+ERROR 2025-05-04 21:40:54,540 views Error in chat: UserQuery() got unexpected keyword arguments: 'confidence_score'
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 373, in chat
+    UserQuery.objects.create(
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: UserQuery() got unexpected keyword arguments: 'confidence_score'
+INFO 2025-05-04 21:43:09,016 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:43:16,434 apps NLP components initialized successfully
+INFO 2025-05-04 21:43:16,455 apps NLP model verification successful
+INFO 2025-05-04 21:43:23,046 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:43:26,200 apps NLP components initialized successfully
+INFO 2025-05-04 21:43:26,200 apps NLP model verification successful
+INFO 2025-05-04 21:45:44,526 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:45:51,343 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:45:54,429 apps NLP components initialized successfully
+INFO 2025-05-04 21:45:54,436 apps NLP model verification successful
+INFO 2025-05-04 21:45:59,417 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:46:02,194 apps NLP components initialized successfully
+INFO 2025-05-04 21:46:02,200 apps NLP model verification successful
+INFO 2025-05-04 21:46:10,161 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:46:13,509 apps NLP components initialized successfully
+INFO 2025-05-04 21:46:13,528 apps NLP model verification successful
+INFO 2025-05-04 21:46:14,493 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:46:17,206 apps NLP components initialized successfully
+INFO 2025-05-04 21:46:17,208 apps NLP model verification successful
+INFO 2025-05-04 21:46:19,101 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:46:22,044 apps NLP components initialized successfully
+INFO 2025-05-04 21:46:22,056 apps NLP model verification successful
+INFO 2025-05-04 21:49:53,344 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:49:57,304 apps NLP components initialized successfully
+INFO 2025-05-04 21:49:57,340 apps NLP model verification successful
+INFO 2025-05-04 21:49:58,482 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:50:01,053 apps NLP components initialized successfully
+INFO 2025-05-04 21:50:01,063 apps NLP model verification successful
+INFO 2025-05-04 21:50:59,870 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:51:02,640 apps NLP components initialized successfully
+INFO 2025-05-04 21:51:02,647 apps NLP model verification successful
+INFO 2025-05-04 21:51:17,257 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:51:19,933 apps NLP components initialized successfully
+INFO 2025-05-04 21:51:19,943 apps NLP model verification successful
+INFO 2025-05-04 21:51:44,115 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:51:46,691 apps NLP components initialized successfully
+INFO 2025-05-04 21:51:46,697 apps NLP model verification successful
+INFO 2025-05-04 21:51:51,319 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:51:54,081 apps NLP components initialized successfully
+INFO 2025-05-04 21:51:54,091 apps NLP model verification successful
+INFO 2025-05-04 21:52:02,921 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:52:06,624 apps NLP components initialized successfully
+INFO 2025-05-04 21:52:06,634 apps NLP model verification successful
+INFO 2025-05-04 21:52:13,926 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:52:21,765 apps NLP components initialized successfully
+INFO 2025-05-04 21:52:21,778 apps NLP model verification successful
+INFO 2025-05-04 21:52:27,328 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:52:27,328 views Received message: hi
+INFO 2025-05-04 21:52:34,516 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:52:34,516 views Received message: what is APIT
+INFO 2025-05-04 21:52:47,030 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:52:47,030 views Received message: what is Personal relief
+ERROR 2025-05-04 21:52:47,036 views Error in chat: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 321, in chat
+    deduction_info = "\n\n".join([
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 322, in <listcomp>
+    f"## {d.deduction_type}\n"
+TypeError: unsupported format string passed to NoneType.__format__
+INFO 2025-05-04 21:55:34,175 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:55:38,227 apps NLP components initialized successfully
+INFO 2025-05-04 21:55:38,233 apps NLP model verification successful
+INFO 2025-05-04 21:55:41,267 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:55:44,258 apps NLP components initialized successfully
+INFO 2025-05-04 21:55:44,258 apps NLP model verification successful
+INFO 2025-05-04 21:56:37,281 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:56:39,540 apps NLP components initialized successfully
+INFO 2025-05-04 21:56:39,540 apps NLP model verification successful
+INFO 2025-05-04 21:56:47,835 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:56:50,451 apps NLP components initialized successfully
+INFO 2025-05-04 21:56:50,456 apps NLP model verification successful
+INFO 2025-05-04 21:56:53,492 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:56:56,262 apps NLP components initialized successfully
+INFO 2025-05-04 21:56:56,268 apps NLP model verification successful
+INFO 2025-05-04 21:57:11,055 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:57:13,680 apps NLP components initialized successfully
+INFO 2025-05-04 21:57:13,695 apps NLP model verification successful
+INFO 2025-05-04 21:57:14,221 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 21:57:17,162 apps NLP components initialized successfully
+INFO 2025-05-04 21:57:17,180 apps NLP model verification successful
+INFO 2025-05-04 21:58:59,272 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:58:59,275 views Received message: hi
+INFO 2025-05-04 21:59:12,004 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:59:12,020 views Received message: what is APIT
+INFO 2025-05-04 21:59:25,078 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:59:25,078 views Received message: what is pesonal relief
+ERROR 2025-05-04 21:59:25,088 views Error in chat: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 321, in chat
+    deduction_info = "\n\n".join([
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 322, in <listcomp>
+    f"## {d.deduction_type}\n"
+TypeError: unsupported format string passed to NoneType.__format__
+INFO 2025-05-04 21:59:37,931 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 21:59:37,931 views Received message: what is personal relief
+ERROR 2025-05-04 21:59:37,955 views Error in chat: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 321, in chat
+    deduction_info = "\n\n".join([
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 322, in <listcomp>
+    f"## {d.deduction_type}\n"
+TypeError: unsupported format string passed to NoneType.__format__
+INFO 2025-05-04 22:09:19,266 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:09:24,293 apps NLP components initialized successfully
+INFO 2025-05-04 22:09:24,340 apps NLP model verification successful
+INFO 2025-05-04 22:09:25,017 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:09:28,445 apps NLP components initialized successfully
+INFO 2025-05-04 22:09:28,451 apps NLP model verification successful
+INFO 2025-05-04 22:10:29,406 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:10:35,161 apps NLP components initialized successfully
+INFO 2025-05-04 22:10:35,170 apps NLP model verification successful
+INFO 2025-05-04 22:10:35,661 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:10:39,546 apps NLP components initialized successfully
+INFO 2025-05-04 22:10:39,555 apps NLP model verification successful
+INFO 2025-05-04 22:10:48,604 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:10:48,612 views Received message: hi
+INFO 2025-05-04 22:10:55,602 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:10:55,603 views Received message: what is APIT
+INFO 2025-05-04 22:11:06,471 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:11:06,476 views Received message: what is personal relief
+ERROR 2025-05-04 22:11:06,495 views Error in chat: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 321, in chat
+    deduction_info = "\n\n".join([
+  File "C:\Users\Keerththansana\Desktop\TaxMate\taxmate_backend\taxmate_chatbot\views.py", line 322, in <listcomp>
+    f"## {d.deduction_type}\n"
+TypeError: unsupported format string passed to NoneType.__format__
+INFO 2025-05-04 22:15:00,862 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:15:06,037 apps NLP components initialized successfully
+INFO 2025-05-04 22:15:06,067 apps NLP model verification successful
+INFO 2025-05-04 22:15:07,502 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:15:07,502 views Received message: what is personal relief
+INFO 2025-05-04 22:15:20,501 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:15:20,501 views Received message: Rent Relief
+INFO 2025-05-04 22:19:09,683 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:19:15,918 apps NLP components initialized successfully
+INFO 2025-05-04 22:19:15,954 apps NLP model verification successful
+INFO 2025-05-04 22:19:18,303 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:19:18,307 views Received message: Rent Relief
+INFO 2025-05-04 22:19:37,159 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:19:37,159 views Received message: Personal Relief
+INFO 2025-05-04 22:19:53,789 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:19:53,794 views Received message: WHAT IS apit
+INFO 2025-05-04 22:20:03,651 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:20:03,657 views Received message: apit AMOUNT
+INFO 2025-05-04 22:20:33,009 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:20:33,009 views Received message: what is the tax for 8000000
+INFO 2025-05-04 22:24:16,873 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:24:21,849 apps NLP components initialized successfully
+INFO 2025-05-04 22:24:21,877 apps NLP model verification successful
+INFO 2025-05-04 22:24:31,805 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:24:31,815 views Received message: what is the tax for 8000000
+INFO 2025-05-04 22:24:59,127 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:24:59,127 views Received message: WHAT IS apit
+INFO 2025-05-04 22:25:10,048 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:10,052 views Received message: Personal Income Tax
+INFO 2025-05-04 22:25:18,328 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:18,328 views Received message: • Tax calculations
+INFO 2025-05-04 22:25:26,212 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:26,219 views Received message: Available deductions
+INFO 2025-05-04 22:25:35,433 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:35,434 views Received message: Personal Relief
+INFO 2025-05-04 22:25:45,539 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:45,541 views Received message: Personal Relief amount
+INFO 2025-05-04 22:25:58,550 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:25:58,554 views Received message: rental relief
+INFO 2025-05-04 22:26:13,135 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:26:13,139 views Received message: Rent Relief rate
+INFO 2025-05-04 22:26:27,459 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:26:30,993 apps NLP components initialized successfully
+INFO 2025-05-04 22:26:31,005 apps NLP model verification successful
+INFO 2025-05-04 22:26:38,248 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:26:38,264 views Received message: hi
+INFO 2025-05-04 22:26:51,254 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:26:51,254 views Received message: good morning
+INFO 2025-05-04 22:28:04,048 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:28:04,050 views Received message: Filing deadlines
+INFO 2025-05-04 22:29:26,419 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:29:36,471 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:29:40,041 apps NLP components initialized successfully
+INFO 2025-05-04 22:29:40,081 apps NLP model verification successful
+INFO 2025-05-04 22:29:40,634 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:29:43,817 apps NLP components initialized successfully
+INFO 2025-05-04 22:29:43,833 apps NLP model verification successful
+INFO 2025-05-04 22:29:50,994 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:29:50,996 views Received message: hi
+INFO 2025-05-04 22:29:59,085 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:29:59,087 views Received message: Filing deadlines
+INFO 2025-05-04 22:30:13,324 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:30:13,328 views Received message: Available deductions
+INFO 2025-05-04 22:30:22,324 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:30:22,326 views Received message: Personal Relief
+INFO 2025-05-04 22:30:35,948 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:30:35,950 views Received message: APIT
+INFO 2025-05-04 22:30:50,180 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:30:50,180 views Received message: Calculate tax for 5000000
+INFO 2025-05-04 22:33:28,171 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:33:36,959 apps NLP components initialized successfully
+INFO 2025-05-04 22:33:36,997 apps NLP model verification successful
+INFO 2025-05-04 22:33:37,878 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:33:42,929 apps NLP components initialized successfully
+INFO 2025-05-04 22:33:42,943 apps NLP model verification successful
+INFO 2025-05-04 22:33:49,397 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:33:54,105 apps NLP components initialized successfully
+INFO 2025-05-04 22:33:54,120 apps NLP model verification successful
+INFO 2025-05-04 22:35:42,001 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:35:45,373 apps NLP components initialized successfully
+INFO 2025-05-04 22:35:45,381 apps NLP model verification successful
+INFO 2025-05-04 22:36:42,978 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:36:47,652 apps NLP components initialized successfully
+INFO 2025-05-04 22:36:47,666 apps NLP model verification successful
+INFO 2025-05-04 22:37:02,614 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:37:02,614 views Received message: Calculate tax for 5000000
+INFO 2025-05-04 22:37:25,593 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:37:25,595 views Received message: what is APIT
+INFO 2025-05-04 22:37:35,454 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:37:35,454 views Received message: what is employment income
+INFO 2025-05-04 22:37:52,022 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:37:52,022 views Received message: what is personal relief
+INFO 2025-05-04 22:38:04,303 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:38:04,303 views Received message: what is tax deduction
+INFO 2025-05-04 22:38:18,790 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:38:18,799 views Received message: Rent Relief rate
+INFO 2025-05-04 22:38:38,546 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:38:38,550 views Received message: why rent relief
+INFO 2025-05-04 22:38:52,106 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:38:52,107 views Received message: calculate tax for 80000
+INFO 2025-05-04 22:39:02,830 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:02,833 views Received message: calculate tax for 800000
+INFO 2025-05-04 22:39:12,358 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:12,361 views Received message: calculate tax for 8000000
+INFO 2025-05-04 22:39:18,277 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:18,277 views Received message: hi
+INFO 2025-05-04 22:39:30,926 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:30,926 views Received message: thank ypu fro your response
+INFO 2025-05-04 22:39:39,274 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:39,274 views Received message: no i am fine
+INFO 2025-05-04 22:39:49,370 nlp_processor NLP processor initialized successfully
+INFO 2025-05-04 22:39:49,370 views Received message: Payment deadlines
+INFO 2025-05-04 22:40:11,099 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-04 22:40:16,647 apps NLP components initialized successfully
+INFO 2025-05-04 22:40:16,657 apps NLP model verification successful

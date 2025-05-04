@@ -169,3 +169,19 @@ class UserQuery(models.Model):
 
     def __str__(self):
         return f"{self.question[:50]}..."
+
+class GeneralResponse(models.Model):
+    input_text = models.CharField(max_length=100)
+    response_text = models.CharField(max_length=200)
+    response_type = models.CharField(max_length=50, choices=[
+        ('greeting', 'Greeting'),
+        ('farewell', 'Farewell'),
+        ('thanks', 'Thanks'),
+        ('general', 'General')
+    ])
+    
+    class Meta:
+        db_table = 'general_responses'
+
+    def __str__(self):
+        return f"{self.input_text} -> {self.response_text}"
