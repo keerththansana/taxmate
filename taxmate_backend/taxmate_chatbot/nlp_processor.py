@@ -1,33 +1,45 @@
 import logging
-import spacy
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.sentiment import SentimentIntensityAnalyzer
-from fuzzywuzzy import fuzz
+import spacy # type: ignore
+import nltk # type: ignore
+from nltk.tokenize import word_tokenize # type: ignore
+from nltk.corpus import stopwords # type: ignore
+from nltk.sentiment import SentimentIntensityAnalyzer # type: ignore
+try:
+    from fuzzywuzzy import fuzz # type: ignore
+except ImportError:
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'fuzzywuzzy', 'python-Levenshtein'])
+    from fuzzywuzzy import fuzz # type: ignore
 from .response_handler import ResponseHandler
 
 logger = logging.getLogger(__name__)
 
 class TaxNLPProcessor:
     def __init__(self):
-        """Initialize NLP components"""
+        """Initialize NLP components with error handling"""
         try:
-            # Initialize NLP components
-            self.nlp = spacy.load('en_core_web_sm')
-            self.stop_words = set(stopwords.words('english'))
-            self.sia = SentimentIntensityAnalyzer()
-            self.response_handler = ResponseHandler()
-            
             # Download required NLTK data
             nltk.download('punkt', quiet=True)
             nltk.download('stopwords', quiet=True)
             nltk.download('vader_lexicon', quiet=True)
             
+            # Initialize NLTK components
+            self.stop_words = set(stopwords.words('english'))
+            self.sia = SentimentIntensityAnalyzer()
+            self.response_handler = ResponseHandler()
+            
+            # Load spaCy model
+            try:
+                self.nlp = spacy.load('en_core_web_sm')
+            except OSError:
+                logger.info("Downloading spaCy model...")
+                spacy.cli.download('en_core_web_sm')
+                self.nlp = spacy.load('en_core_web_sm')
+            
             logger.info("NLP processor initialized successfully")
             
         except Exception as e:
-            logger.error(f"Error initializing NLP processor: {str(e)}")
+            logger.error(f"NLP initialization error: {str(e)}")
             raise
 
     def analyze_sentiment(self, text):
@@ -70,18 +82,15 @@ class TaxNLPProcessor:
         return 'general'
 
     def preprocess_text(self, text):
-        """Enhanced text preprocessing"""
-        doc = self.nlp(text.lower())
-        
-        # Remove stopwords and punctuation, but keep important tax terms
-        tokens = []
-        tax_terms = {'tax', 'deduction', 'relief', 'payment', 'income', 'apit'}
-        
-        for token in doc:
-            if (not token.is_stop and not token.is_punct) or token.text in tax_terms:
-                tokens.append(token.lemma_)
-        
-        return ' '.join(tokens)
+        """Preprocess input text"""
+        try:
+            # Tokenize and clean text
+            doc = self.nlp(text.lower())
+            tokens = [token.text for token in doc if not token.is_stop and token.is_alpha]
+            return " ".join(tokens)
+        except Exception as e:
+            logger.error(f"Text preprocessing error: {str(e)}")
+            return text
 
     def extract_intent(self, text):
         """Improved intent extraction with fuzzy matching and context"""

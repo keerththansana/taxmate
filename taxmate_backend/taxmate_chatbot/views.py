@@ -12,7 +12,6 @@ import logging
 import re
 from .nlp_processor import TaxNLPProcessor
 from .ml_model import TaxResponsePredictor
-
 logger = logging.getLogger(__name__)
 
 class ChatbotView(ViewSet):
@@ -21,38 +20,45 @@ class ChatbotView(ViewSet):
         self.nlp_processor = TaxNLPProcessor()
         self.response_predictor = TaxResponsePredictor()
         
+        # Move model saving/loading to appropriate place
+        try:
+            self.response_predictor.load_model('tax_response_model.joblib')
+        except Exception:
+            logger.warning("No pre-trained model found. Will train on first use.")
+        
         # Initialize response templates
         self.response_templates = {
-            'tax_info': """# Sri Lankan Tax Information
+            'tax_info': """ Sri Lankan Tax Information
 
 {content}
 
-## Need help with:
+Need help with:
+• Tax Slabs
 • Tax Calculations
 • Available Deductions
 • Payment Deadlines
 • Tax Filing""",
             
-            'calculation': """# Tax Calculation Result
+            'calculation': """ Tax Calculation Result
 
 {content}
 
-## Note:
+ Note:
 This is a basic calculation. Actual tax may vary based on:
 • Applicable deductions
 • Special reliefs
 • Qualifying payments""",
             
-            'deduction': """# Available Tax Deductions
+            'deduction': """ Available Tax Deductions
 
 {content}
 
-## Important:
+Important:
 • Keep all supporting documents
 • Submit claims within deadline
 • Verify eligibility criteria""",
             
-            'error': """# ⚠️ Error
+            'error': """ ⚠️ Error
 
 I apologize, but I encountered an issue while processing your request.
 Please try:
@@ -60,7 +66,7 @@ Please try:
 • Being more specific
 • Using example queries below
 
-## Example Questions:
+ Example Questions:
 • "What is my tax for Rs. 2,500,000 income?"
 • "Tell me about personal relief"
 • "When is the tax filing deadline?"
@@ -187,13 +193,13 @@ Please try:
             if not deductions.exists():
                 return None
 
-            response = "# Tax Deductions\n\n"
+            response = " Tax Deductions\n\n"
             for deduction in deductions:
-                response += f"## {deduction.deduction_type}\n"
+                response += f" {deduction.deduction_type}\n"
                 if deduction.description:
                     response += f"{deduction.description}\n\n"
                 
-                response += "### Details\n"
+                response += " Details\n"
                 if deduction.max_allowable_amount is not None:
                     response += f"- Maximum Amount: Rs. {deduction.max_allowable_amount:,}\n"
                 if deduction.percentage is not None:
@@ -206,7 +212,7 @@ Please try:
 
         except Exception as e:
             logger.error(f"Error fetching deductions: {str(e)}")
-            return "# ⚠️ Error\nUnable to fetch deduction information."
+            return "<b> ⚠️ Error\nUnable to fetch deduction information.</b>"
 
     def get_qualifying_payments_info(self, keywords):
         """Fetch qualifying payments information"""
@@ -654,11 +660,11 @@ I apologize, but I encountered an error. Please try:
         return Response({
             'success': True,
             'response': "\n".join([
-                "# Let Me Help You",
+                " Let Me Help You",
                 "",
                 "I notice you might be unclear about something. Let me help:",
                 "",
-                "## Common Topics",
+                " Common Topics",
                 "1. Basic Tax Concepts",
                 "   - Income Tax explained",
                 "   - APIT system",
@@ -845,5 +851,4 @@ y = [q.matched_response for q in queries]
 
 predictor = TaxResponsePredictor()
 accuracy = predictor.train(X, y)
-predictor.save_model('tax_response_model.joblib')
 

@@ -1,5 +1,5 @@
 import logging
-from django.db.models import Q
+from django.db.models import Q # type: ignore
 from .models import FAQStatic, Deduction, TaxSlab, TaxCalendar
 
 logger = logging.getLogger(__name__)
