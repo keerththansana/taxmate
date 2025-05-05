@@ -656,3 +656,5 @@ INFO 2025-05-04 22:39:49,370 views Received message: Payment deadlines
 INFO 2025-05-04 22:40:11,099 apps Initializing TaxMate Chatbot in DEBUG mode
 INFO 2025-05-04 22:40:16,647 apps NLP components initialized successfully
 INFO 2025-05-04 22:40:16,657 apps NLP model verification successful
+INFO 2025-05-05 09:38:36,103 apps Initializing TaxMate Chatbot in DEBUG mode
+ERROR 2025-05-05 09:38:36,103 apps Failed to import NLP components: No module named 'taxmate_chatbot.nlp_setup'
