@@ -84,7 +84,7 @@ const Chatbot = () => {
                             <h1 className="assistant-title">Tax Assistant</h1>
                         </div>
                         <div className="empty-state">
-                            <p>Hi! How can I help you today?</p>
+                            <p>Hi! I am your tax Assistant. How can I help you today?</p>
                         </div>
                     </div>
                 ) : (
