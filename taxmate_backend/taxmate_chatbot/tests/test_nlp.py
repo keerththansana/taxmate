@@ -1,7 +1,7 @@
-from django.test import TestCase
-import spacy
-import nltk
-from nltk.tokenize import word_tokenize
+from django.test import TestCase # type: ignore
+import spacy # type: ignore
+import nltk # type: ignore
+from nltk.tokenize import word_tokenize # type: ignore
 
 class NLPSetupTests(TestCase):
     @classmethod
@@ -33,4 +33,4 @@ class NLPSetupTests(TestCase):
             self.fail(f"spaCy model loading failed: {str(e)}")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main() # type: ignore

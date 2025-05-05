@@ -1,8 +1,8 @@
-from django.db.models import Q
-from rest_framework.decorators import action
-from rest_framework.response import Response
-from rest_framework.viewsets import ViewSet
-from fuzzywuzzy import fuzz
+from django.db.models import Q # type: ignore
+from rest_framework.decorators import action # type: ignore
+from rest_framework.response import Response # type: ignore
+from rest_framework.viewsets import ViewSet # type: ignore
+from fuzzywuzzy import fuzz # type: ignore
 from .models import (
     Deduction, FAQStatic, UserQuery, TaxSlab,
     QualifyingPayment, TaxCalendar, GeneralResponse
@@ -735,7 +735,7 @@ I apologize, but I encountered an error. Please try:
                     responses.append(f"# Available Deductions\n\n{deduction_info}")
 
             if any(word in message.lower() for word in ['deadline', 'date', 'when', 'due']):
-                events = TaxCalendar.objects.filter(event_date__gte=timezone.now()).order_by('event_date')[:3]
+                events = TaxCalendar.objects.filter(event_date__gte=timezone.now()).order_by('event_date')[:3] # type: ignore
                 if events.exists():
                     calendar_info = "\n".join([
                         f"• {e.event_name}: {e.event_date.strftime('%B %d, %Y')}\n  {e.event_description}"

@@ -658,3 +658,220 @@ INFO 2025-05-04 22:40:16,647 apps NLP components initialized successfully
 INFO 2025-05-04 22:40:16,657 apps NLP model verification successful
 INFO 2025-05-05 09:38:36,103 apps Initializing TaxMate Chatbot in DEBUG mode
 ERROR 2025-05-05 09:38:36,103 apps Failed to import NLP components: No module named 'taxmate_chatbot.nlp_setup'
+INFO 2025-05-05 10:01:53,086 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:02:06,559 apps NLP components initialized successfully
+INFO 2025-05-05 10:02:06,593 apps NLP model verification successful
+INFO 2025-05-05 10:02:10,853 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:02:13,789 apps NLP components initialized successfully
+INFO 2025-05-05 10:02:13,809 apps NLP model verification successful
+INFO 2025-05-05 10:02:18,099 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:02:21,568 apps NLP components initialized successfully
+INFO 2025-05-05 10:02:21,574 apps NLP model verification successful
+INFO 2025-05-05 10:02:22,184 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:02:25,237 apps NLP components initialized successfully
+INFO 2025-05-05 10:02:25,245 apps NLP model verification successful
+INFO 2025-05-05 10:04:19,762 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:04:24,008 apps NLP components initialized successfully
+INFO 2025-05-05 10:04:24,016 apps NLP model verification successful
+INFO 2025-05-05 10:04:24,547 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:04:27,544 apps NLP components initialized successfully
+INFO 2025-05-05 10:04:27,552 apps NLP model verification successful
+INFO 2025-05-05 10:04:34,477 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:04:37,462 apps NLP components initialized successfully
+INFO 2025-05-05 10:04:37,468 apps NLP model verification successful
+INFO 2025-05-05 10:04:49,553 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:04:52,280 apps NLP components initialized successfully
+INFO 2025-05-05 10:04:52,296 apps NLP model verification successful
+INFO 2025-05-05 10:05:03,952 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:05:06,558 apps NLP components initialized successfully
+INFO 2025-05-05 10:05:06,567 apps NLP model verification successful
+INFO 2025-05-05 10:05:10,114 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:05:12,625 apps NLP components initialized successfully
+INFO 2025-05-05 10:05:12,625 apps NLP model verification successful
+INFO 2025-05-05 10:05:16,245 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:05:19,146 apps NLP components initialized successfully
+INFO 2025-05-05 10:05:19,160 apps NLP model verification successful
+INFO 2025-05-05 10:05:19,621 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:05:22,311 apps NLP components initialized successfully
+INFO 2025-05-05 10:05:22,311 apps NLP model verification successful
+INFO 2025-05-05 10:05:32,202 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:05:32,203 views Received message: hi
+INFO 2025-05-05 10:05:45,935 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:05:45,937 views Received message: what is tax for 3000000
+INFO 2025-05-05 10:05:59,390 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:05:59,392 views Received message: what is APIT
+INFO 2025-05-05 10:06:10,068 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:06:10,068 views Received message: What is personal Relief
+INFO 2025-05-05 10:06:21,840 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:06:21,840 views Received message: what is employment icnome
+INFO 2025-05-05 10:06:40,746 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:06:40,749 views Received message: ETF Contributions
+INFO 2025-05-05 10:06:50,001 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:06:50,001 views Received message: Available deductions
+INFO 2025-05-05 10:06:59,742 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:06:59,748 views Received message: Payment deadlines
+INFO 2025-05-05 10:07:26,171 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:07:26,176 views Received message: Tax calculations
+INFO 2025-05-05 10:07:35,436 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:07:35,438 views Received message: Documentation requirements
+INFO 2025-05-05 10:07:48,279 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:07:48,279 views Received message: Current tax rates
+INFO 2025-05-05 10:08:47,207 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:08:47,209 views Received message: explain tax
+INFO 2025-05-05 10:09:57,914 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:10:02,059 apps NLP components initialized successfully
+INFO 2025-05-05 10:10:02,082 apps NLP model verification successful
+INFO 2025-05-05 10:10:08,650 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:10:11,574 apps NLP components initialized successfully
+INFO 2025-05-05 10:10:11,581 apps NLP model verification successful
+INFO 2025-05-05 10:10:20,174 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:10:22,976 apps NLP components initialized successfully
+INFO 2025-05-05 10:10:22,984 apps NLP model verification successful
+INFO 2025-05-05 10:10:27,098 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:10:29,868 apps NLP components initialized successfully
+INFO 2025-05-05 10:10:29,868 apps NLP model verification successful
+INFO 2025-05-05 10:10:33,892 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:10:36,768 apps NLP components initialized successfully
+INFO 2025-05-05 10:10:36,769 apps NLP model verification successful
+INFO 2025-05-05 10:13:44,775 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:13:48,222 apps NLP components initialized successfully
+INFO 2025-05-05 10:13:48,242 apps NLP model verification successful
+INFO 2025-05-05 10:13:48,806 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:13:52,486 apps NLP components initialized successfully
+INFO 2025-05-05 10:13:52,486 apps NLP model verification successful
+ERROR 2025-05-05 10:14:07,012 nlp_processor Error initializing NLP processor: name 'ResponseHandler' is not defined
+ERROR 2025-05-05 10:14:19,557 nlp_processor Error initializing NLP processor: name 'ResponseHandler' is not defined
+INFO 2025-05-05 10:15:29,048 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:15:33,776 apps NLP components initialized successfully
+INFO 2025-05-05 10:15:33,798 apps NLP model verification successful
+INFO 2025-05-05 10:16:17,399 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:16:20,636 apps NLP components initialized successfully
+INFO 2025-05-05 10:16:20,700 apps NLP model verification successful
+INFO 2025-05-05 10:17:26,159 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:17:30,076 apps NLP components initialized successfully
+INFO 2025-05-05 10:17:30,076 apps NLP model verification successful
+INFO 2025-05-05 10:17:30,687 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:17:33,730 apps NLP components initialized successfully
+INFO 2025-05-05 10:17:33,736 apps NLP model verification successful
+INFO 2025-05-05 10:17:41,736 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:17:41,736 views Received message: hi
+INFO 2025-05-05 10:17:52,357 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:17:52,357 views Received message: explain tax
+INFO 2025-05-05 10:19:57,018 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:20:05,100 apps NLP components initialized successfully
+INFO 2025-05-05 10:20:05,129 apps NLP model verification successful
+INFO 2025-05-05 10:21:03,063 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:21:09,173 apps NLP components initialized successfully
+INFO 2025-05-05 10:21:09,197 apps NLP model verification successful
+INFO 2025-05-05 10:21:13,628 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:21:20,136 apps NLP components initialized successfully
+INFO 2025-05-05 10:21:20,172 apps NLP model verification successful
+INFO 2025-05-05 10:21:24,042 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:21:30,152 apps NLP components initialized successfully
+INFO 2025-05-05 10:21:30,193 apps NLP model verification successful
+INFO 2025-05-05 10:21:39,864 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:21:43,454 apps NLP components initialized successfully
+INFO 2025-05-05 10:21:43,468 apps NLP model verification successful
+INFO 2025-05-05 10:21:47,222 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:21:47,231 views Received message: hi
+INFO 2025-05-05 10:21:56,027 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:21:56,031 views Received message: explain tax
+INFO 2025-05-05 10:25:00,412 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:25:04,785 apps NLP components initialized successfully
+INFO 2025-05-05 10:25:04,818 apps NLP model verification successful
+INFO 2025-05-05 10:25:18,812 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:25:23,602 apps NLP components initialized successfully
+INFO 2025-05-05 10:25:23,611 apps NLP model verification successful
+INFO 2025-05-05 10:25:24,215 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:25:27,784 apps NLP components initialized successfully
+INFO 2025-05-05 10:25:27,792 apps NLP model verification successful
+INFO 2025-05-05 10:25:41,427 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:25:41,427 views Received message: explain tax
+INFO 2025-05-05 10:27:15,700 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:27:15,702 views Received message: whatn is APIT
+INFO 2025-05-05 10:29:27,581 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:29:34,639 apps NLP components initialized successfully
+INFO 2025-05-05 10:29:34,695 apps NLP model verification successful
+INFO 2025-05-05 10:29:37,821 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:29:37,821 views Received message: hi
+INFO 2025-05-05 10:29:38,501 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:29:38,501 views Received message: hello
+INFO 2025-05-05 10:29:38,959 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:29:38,961 views Received message: good morning
+INFO 2025-05-05 10:29:39,461 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:29:39,461 views Received message: good evening
+INFO 2025-05-05 10:29:51,011 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:29:54,981 apps NLP components initialized successfully
+INFO 2025-05-05 10:29:54,991 apps NLP model verification successful
+INFO 2025-05-05 10:29:55,467 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:29:58,476 apps NLP components initialized successfully
+INFO 2025-05-05 10:29:58,481 apps NLP model verification successful
+INFO 2025-05-05 10:30:03,743 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:30:03,745 views Received message: hi
+INFO 2025-05-05 10:30:13,323 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:30:13,328 views Received message: explain tax
+INFO 2025-05-05 10:35:40,778 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:35:45,968 apps NLP components initialized successfully
+INFO 2025-05-05 10:35:45,996 apps NLP model verification successful
+INFO 2025-05-05 10:36:07,246 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:36:10,393 apps NLP components initialized successfully
+INFO 2025-05-05 10:36:10,396 apps NLP model verification successful
+INFO 2025-05-05 10:37:40,296 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:37:43,896 apps NLP components initialized successfully
+INFO 2025-05-05 10:37:43,898 apps NLP model verification successful
+INFO 2025-05-05 10:37:48,739 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:37:53,316 apps NLP components initialized successfully
+INFO 2025-05-05 10:37:53,326 apps NLP model verification successful
+INFO 2025-05-05 10:38:12,561 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:38:15,796 apps NLP components initialized successfully
+INFO 2025-05-05 10:38:15,804 apps NLP model verification successful
+INFO 2025-05-05 10:38:16,396 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:38:20,388 apps NLP components initialized successfully
+INFO 2025-05-05 10:38:20,396 apps NLP model verification successful
+INFO 2025-05-05 10:39:35,895 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:39:40,665 apps NLP components initialized successfully
+INFO 2025-05-05 10:39:40,675 apps NLP model verification successful
+INFO 2025-05-05 10:43:18,081 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:43:20,822 apps NLP components initialized successfully
+INFO 2025-05-05 10:43:20,835 apps NLP model verification successful
+INFO 2025-05-05 10:43:24,677 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:43:27,037 apps NLP components initialized successfully
+INFO 2025-05-05 10:43:27,048 apps NLP model verification successful
+INFO 2025-05-05 10:43:33,236 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:43:36,011 apps NLP components initialized successfully
+INFO 2025-05-05 10:43:36,025 apps NLP model verification successful
+INFO 2025-05-05 10:43:54,797 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:43:58,781 apps NLP components initialized successfully
+INFO 2025-05-05 10:43:58,795 apps NLP model verification successful
+INFO 2025-05-05 10:44:11,376 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:44:11,376 views Received message: what is APIT
+INFO 2025-05-05 10:44:15,651 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:44:15,659 views Received message: hi
+INFO 2025-05-05 10:44:21,126 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:44:21,130 views Received message: sorry
+INFO 2025-05-05 10:44:28,606 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:44:28,606 views Received message: good morning
+INFO 2025-05-05 10:44:56,025 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:44:56,025 views Received message: Hi Good morning
+INFO 2025-05-05 10:48:47,288 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:48:47,299 views Received message: hi
+INFO 2025-05-05 10:48:56,590 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:48:56,597 views Received message: Hi
+INFO 2025-05-05 10:49:07,825 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:49:07,825 views Received message: Good Morning
+INFO 2025-05-05 10:49:20,193 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:49:20,193 views Received message: What is APIT?
+INFO 2025-05-05 10:49:31,405 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:49:31,407 views Received message: Thank you
+INFO 2025-05-05 10:50:03,793 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:50:03,795 views Received message: Hi
+INFO 2025-05-05 10:50:13,645 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:50:13,645 views Received message: Good Morning
+INFO 2025-05-05 10:50:27,449 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:50:27,449 views Received message: What is Personal Relief
+INFO 2025-05-05 10:50:34,596 nlp_processor NLP processor initialized successfully
+INFO 2025-05-05 10:50:34,603 views Received message: Thank You
+INFO 2025-05-05 10:52:14,060 apps Initializing TaxMate Chatbot in DEBUG mode
+INFO 2025-05-05 10:52:18,980 apps NLP components initialized successfully
+INFO 2025-05-05 10:52:19,000 apps NLP model verification successful
+INFO 2025-05-05 10:52:25,084 apps Initializing TaxMate Chatbot in DEBUG mode

@@ -1,6 +1,6 @@
-from django.apps import AppConfig
+from django.apps import AppConfig # type: ignore
 import logging
-from django.conf import settings
+from django.conf import settings # type: ignore
 
 logger = logging.getLogger(__name__)
 
